@@ -11,4 +11,8 @@
         <file>components/FancyLoginPanel/FancyLoginPanel.qml</file>
         <file>components/FancyLoginPanel/FancyMobileButton.qml</file>
     </qresource>
+    <qresource prefix="/FancyColorPicker">
+        <file>components/FancyColorPicker/FancyColorPicker.qml</file>
+        <file>components/FancyColorPicker/example.qml</file>
+    </qresource>
 </RCC>

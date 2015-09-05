@@ -65,6 +65,11 @@ ApplicationWindow {
             path: "qrc:/FancyLoginPanel/components/FancyLoginPanel/example.qml"
         }
 
+        ListElement {
+            name: "Fancy Color Picker"
+            path: "qrc:/FancyColorPicker/components/FancyColorPicker/example.qml"
+        }
+
     }
 
 
