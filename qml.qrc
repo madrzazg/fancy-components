@@ -2,4 +2,8 @@
     <qresource prefix="/">
         <file>main.qml</file>
     </qresource>
+    <qresource prefix="/FancyMobileButton">
+        <file>components/FancyMobileButton/example.qml</file>
+        <file>components/FancyMobileButton/FancyMobileButton.qml</file>
+    </qresource>
 </RCC>

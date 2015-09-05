@@ -25,6 +25,7 @@ ApplicationWindow {
             focus: true
             model: listModel
             boundsBehavior: Flickable.DragOverBounds
+            onCurrentIndexChanged: loader.source = model.get(currentIndex).path
 
             delegate: Item {
                 id: delegate
@@ -43,7 +44,7 @@ ApplicationWindow {
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: loader.source = path
+                    onClicked: listView.currentIndex = index
                 }
             }
         }
@@ -55,8 +56,8 @@ ApplicationWindow {
         id: listModel
 
         ListElement {
-            name: "none"
-            path: "none"
+            name: "Fancy Mobile Button"
+            path: "qrc:/FancyMobileButton/components/FancyMobileButton/example.qml"
         }
     }
 
