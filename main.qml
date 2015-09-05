@@ -59,6 +59,12 @@ ApplicationWindow {
             name: "Fancy Mobile Button"
             path: "qrc:/FancyMobileButton/components/FancyMobileButton/example.qml"
         }
+
+        ListElement {
+            name: "Fancy Login Panel"
+            path: "qrc:/FancyLoginPanel/components/FancyLoginPanel/example.qml"
+        }
+
     }
 
 
