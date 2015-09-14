@@ -20,5 +20,9 @@
     <qresource prefix="/icons">
         <file>icons/go-next.svg</file>
         <file>icons/go-previous.svg</file>
+        <file>icons/contact-new.svg</file>
+        <file>icons/ic_add_black_48dp.png</file>
+        <file>icons/ic_keyboard_arrow_left_black_48dp.png</file>
+        <file>icons/ic_keyboard_arrow_right_black_48dp.png</file>
     </qresource>
 </RCC>

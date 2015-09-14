@@ -15,50 +15,74 @@ import QtQuick 2.4
 import QtQuick.Controls 1.3
 
 Rectangle {
+    id: root
     width: 640
     height: 480
-    visible: true
+    color: "#4c4c4c"
 
-    Rectangle {
-        width: 250
-        height: 250
-        color: "#4c4c4c"
-        anchors.centerIn: parent
+
+    ScrollView {
+        id: scrollView
+        anchors.fill: parent
+        anchors.topMargin: dpi(5)
 
         Column {
             id: column
-            width: 200
-            height: column.implicitHeight
-            anchors.centerIn: parent
-            spacing: 3
+            width: scrollView.width
+            height: scrollView.height
+            spacing: dpi(3)
 
-            TextField {
-                width: parent.width
-                placeholderText: "Login"
-                font.pointSize: 10
-            }
-
-            TextField{
-                width: parent.width
-                placeholderText: "Password"
-                echoMode: TextInput.Password
-                font.pointSize: 10
+            FancyMobileButton {
+                width: scrollView.width * 0.8
+                anchors.horizontalCenter: parent.horizontalCenter
+                height: dpi(10)
+                color: "#00bb11"
+                text: "#00bb11"
+                onClicked: console.log("Selected: " + text)
             }
 
             FancyMobileButton {
-                width: parent.width
-                height: 25
-                color: "#00bb11"
-                text: "Sign in"
-                onClicked: console.log("Sign in button clicked")
+                width: scrollView.width * 0.8
+                anchors.horizontalCenter: parent.horizontalCenter
+                height: dpi(10)
+                radius: dpi(5)
+                color: "#2962ff"
+                text: "#2962ff"
+                onClicked: console.log("Selected: " + text)
             }
 
             FancyMobileButton {
-                width: parent.width
-                height: 25
-                color: "#00bb11"
-                text: "Create Account"
-                onClicked: console.log("Create Account button clicked")
+                width: dpi(15)
+                height: dpi(15)
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: "#00bcd4"
+                text: ""
+                onClicked: console.log("Selected: " + color)
+                radius: dpi(15)/2
+
+                Image {
+                    width: parent.width * 0.9
+                    height: parent.height * 0.9
+                    source: "qrc:/icons/icons/ic_add_black_48dp.png"
+                    anchors.centerIn: parent
+                }
+            }
+
+            FancyMobileButton {
+                width: dpi(15)
+                height: dpi(15)
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: "#ff9800"
+                text: ""
+                onClicked: console.log("Selected: " + color)
+                radius: dpi(15/2)
+
+                Image {
+                    width: parent.width * 0.9
+                    height: parent.height * 0.9
+                    source: "qrc:/icons/icons/ic_add_black_48dp.png"
+                    anchors.centerIn: parent
+                }
             }
         }
     }

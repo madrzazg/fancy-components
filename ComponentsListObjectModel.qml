@@ -58,7 +58,7 @@ ObjectModel {
                     height: dpi(8)
                     anchors.right: parent.right
                     anchors.verticalCenter: parent.verticalCenter
-                    source: "qrc:/icons/icons/go-next.svg"
+                    source: "qrc:/icons/icons/ic_keyboard_arrow_right_black_48dp.png"
                 }
             }
         }
@@ -81,7 +81,7 @@ ObjectModel {
                     width: dpi(8)
                     height: dpi(8)
                     anchors.verticalCenter: parent.verticalCenter
-                    source: "qrc:/icons/icons/go-previous.svg"
+                    source: "qrc:/icons/icons/ic_keyboard_arrow_left_black_48dp.png"
                 }
 
                 Label {
